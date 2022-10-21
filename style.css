@@ -1,0 +1,36 @@
+body{
+    background-color: #eef9bf;
+    display: flex;
+    flex-direction: column;
+}
+@font-face {
+    font-family: Roboto;
+    src: url(./Assets/Roboto-Regular.ttf)
+  }
+h1{
+    margin: auto;
+    color: #75B79E;
+    font-size: 64px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 40px;
+    font-family: 'Roboto';
+}
+.game{
+    margin: auto;
+    margin-top: 47px;
+    width: 900px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 34px;
+}
+.card{
+    width: 117px;
+    height: 147px;
+    background-color:  #99CEA8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
