@@ -23,18 +23,9 @@ h1{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    gap: 34px;
-}
-/* .card{
-    width: 117px;
-    height: 147px;
-    background-color:  #99CEA8;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    position: relative;
-} */  .card {
+    gap: 34px;}
+
+    .card {
     width: 117px;
     height: 147px;
     position: relative;
@@ -66,3 +57,39 @@ h1{
   .virada .front-face {
     transform: rotateY(-180deg);
   }
+  .back1{
+    background-image: url(./Assets/bobrossparrot.gif);
+
+  }
+  .back2{
+    background-image: url(./Assets/explodyparrot.gif);
+
+  }
+  .back3{
+    background-image: url(./Assets/fiestaparrot.gif);
+  }
+  .back4{
+    background-image: url(./Assets/metalparrot.gif);
+  }
+  .back5{
+    background-image: url(./Assets/revertitparrot.gif);
+  }
+  .back6{
+    background-image: url(./Assets/tripletsparrot.gif);
+  }
+  .back7{
+    background-image: url(./Assets/unicornparrot.gif);
+  }
+  .back1, .back2, .back3, .back4, .back5, .back6, .back7{
+    background-size: 110px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+  }
+.virada1 .back-face{
+  transform: rotateY(0deg);
+
+}
+.virada1 .front-face {
+  transform: rotateY(-180deg);
+}
