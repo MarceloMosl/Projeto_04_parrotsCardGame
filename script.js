@@ -19,7 +19,7 @@ function howManyCards() {
 
     for (i = 0; i < quantCards; i++) {
 
-      gameCards.push(`<ul class="card" onclick="virarCarta(this)" data-character="${mudaFundoDuplicated[i]}">
+      gameCards.push(`<ul class="card" onclick="virarCarta(this), contadorDeClicks()" data-character="${mudaFundoDuplicated[i]}">
       <li class="front-face face">
       <img src="./Assets/front 1.png" alt="">
       </li>
