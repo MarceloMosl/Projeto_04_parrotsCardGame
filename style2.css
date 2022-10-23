@@ -1,0 +1,28 @@
+@media screen and (max-width: 935px) {
+    .title {  
+        margin: auto;
+        font-size: 40px;
+        width: 320px;
+        height: 83px;
+        margin-top: 40px;
+    }
+
+    .game {
+        width: 100%;
+    }
+
+
+}
+
+@media screen and (max-width: 500px) {  
+
+    .game{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+
+
+
+
+}

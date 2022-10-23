@@ -1,95 +1,118 @@
-body{
-    background-color: #eef9bf;
-    display: flex;
-    flex-direction: column;
+body {
+  background-color: #eef9bf;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: auto; */
 }
+
 @font-face {
-    font-family: Roboto;
-    src: url(./Assets/Roboto-Regular.ttf)
-  }
-h1{
-    margin: auto;
-    color: #75B79E;
-    font-size: 64px;
-    font-weight: 700;
-    text-align: center;
-    margin-top: 40px;
-    font-family: 'Roboto';
+  font-family: Roboto;
+  src: url(./Assets/Roboto-Regular.ttf)
 }
-.game{
-    margin: auto;
-    margin-top: 47px;
-    width: 900px;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    gap: 34px;}
 
-    .card {
-    width: 117px;
-    height: 147px;
-    position: relative;
-  }
-  
-  .face {
-    width: 100%;
-    height: 100%;
-    background-color: #a7e9af;
-    border-radius: 10px;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    backface-visibility: hidden;
-    transition: all 0.5s;
-    transform-style: preserve-3d;
-  }
-  
-  .back-face {
-    transform: rotateY(180deg);
-  }
- 
-  .virada .back-face {
-    transform: rotateY(0deg);
-  }
-  
-  .virada .front-face {
-    transform: rotateY(-180deg);
-  }
-  .back1{
-    background-image: url(./Assets/bobrossparrot.gif);
+.title {
+  color: #75B79E;
+  font-size: 64px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 40px;
+  font-family: 'Roboto';
+}
 
-  }
-  .back2{
-    background-image: url(./Assets/explodyparrot.gif);
+.game {
+  margin: auto;
+  margin-top: 47px;
+  width: 900px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 34px;
+}
 
-  }
-  .back3{
-    background-image: url(./Assets/fiestaparrot.gif);
-  }
-  .back4{
-    background-image: url(./Assets/metalparrot.gif);
-  }
-  .back5{
-    background-image: url(./Assets/revertitparrot.gif);
-  }
-  .back6{
-    background-image: url(./Assets/tripletsparrot.gif);
-  }
-  .back7{
-    background-image: url(./Assets/unicornparrot.gif);
-  }
-  .back1, .back2, .back3, .back4, .back5, .back6, .back7{
-    background-size: 110px;
-    background-repeat: no-repeat;
-    background-position: center;
+.card {
+  width: 117px;
+  height: 147px;
+  position: relative;
+}
 
-  }
-.virada1 .back-face{
+.face {
+  width: 100%;
+  height: 100%;
+  background-color: #a7e9af;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: all 0.5s;
+  transform-style: preserve-3d;
+}
+
+.back-face {
+  transform: rotateY(180deg);
+}
+
+.virada .back-face {
+  transform: rotateY(0deg);
+}
+
+.virada .front-face {
+  transform: rotateY(-180deg);
+}
+
+.back1 {
+  background-image: url(./Assets/bobrossparrot.gif);
+
+}
+
+.back2 {
+  background-image: url(./Assets/explodyparrot.gif);
+
+}
+
+.back3 {
+  background-image: url(./Assets/fiestaparrot.gif);
+}
+
+.back4 {
+  background-image: url(./Assets/metalparrot.gif);
+}
+
+.back5 {
+  background-image: url(./Assets/revertitparrot.gif);
+}
+
+.back6 {
+  background-image: url(./Assets/tripletsparrot.gif);
+}
+
+.back7 {
+  background-image: url(./Assets/unicornparrot.gif);
+}
+
+.back1,
+.back2,
+.back3,
+.back4,
+.back5,
+.back6,
+.back7 {
+  background-size: 110px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.virada1 .back-face {
   transform: rotateY(0deg);
 
 }
+
 .virada1 .front-face {
   transform: rotateY(-180deg);
 }

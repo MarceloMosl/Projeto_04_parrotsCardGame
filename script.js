@@ -98,6 +98,8 @@ function fim(){
     reiniciar = prompt("gostaria de reiniciar? (Responda- 'sim'ou 'nao' )")
     if(reiniciar == "sim"){
       window.location.reload(true)
+    }else if(reiniciar == 'nao'){
+      window.close()
     }else{
       reiniciar = prompt(" Responda 'sim' ou 'nao'")
       fim()
