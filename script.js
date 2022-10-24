@@ -42,24 +42,26 @@ let c1;
 let c2;
 let contador = 0;
 function virarCarta(carta) {
-  carta.classList.toggle('virada');
+  if(carta.classList.contains("virada")){
+    return;
+  }
+  carta.classList.add('virada');
   contador++;
   if(contador==1){
     c1 = carta
   }else if(contador == 2){
     c2 = carta
     verificarCarta(c1,c2)
-    Acertou(c1,c2)
+    acertou(c1,c2)
     contador = 0;
     c1 =0;
     c2=0; 
  }
 }
 let check;
-let primeiraCartaVirada, segundaCartaVirada;
 function verificarCarta(card1, card2){
-  primeiraCartaVirada = card1.getAttribute('data-character')
-  segundaCartaVirada = card2.getAttribute('data-character')
+ const primeiraCartaVirada = card1.getAttribute('data-character')
+const segundaCartaVirada = card2.getAttribute('data-character')
   if(primeiraCartaVirada == segundaCartaVirada){
     console.log("acertou")
     check = 10;
@@ -71,7 +73,7 @@ function verificarCarta(card1, card2){
   }
 
 }
-function Acertou(opcaoUm, opcaoDois){
+function acertou(opcaoUm, opcaoDois){
   if (check == 10) {
        opcaoUm.classList.add('virada1')
        opcaoDois.classList.add('virada1')
